@@ -1,0 +1,15 @@
+Take in a RepeatMasker output file and perform the following manipulations:
+
+1. Convert to bed format with the following columns.
+	A - chrom/contig/scaffold
+	B - chromStart
+	C - chromEnd
+	D - TE name
+	E - TE Class/Family
+	F - size of TE insertion in bp
+	G - K2P distance (without "kimura =")
+
+2. Parse the output into six subcategory files: SINEs, Rolling Circle transposons (DNA/RC), DNA transposons (DNA/<anything other than RC>), NonLTR elements, LTR elements, unknowns.
+	i.e. SINEs_rm.out, RC_rm.out, etc.
+	
+input file = aVan_rm.out
